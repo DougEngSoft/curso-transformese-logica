@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+
+<script>
+    var codigo = Number(prompt("Digite o codigo do seu cargo : "));
+    var salario = Number(prompt("Digite o seu salario : "));
+
+    var aumento;
+    var novoSalario;
+
+    if(codigo == 1) {
+        document.write("Cargo : Escriturario");
+        document.write("<hr>");
+
+        aumento = salario * (50/100);
+        novoSalario = salario + aumento
+        document.write("Voce recebera um aumento de : " + aumento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>");
+        document.write("Seu novo salario e de : " + novoSalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));   
+        document.write("<hr>")
+
+    }
+    else if(codigo == 2) {
+        document.write("Cargo : Secretario");
+        document.write("<hr>");
+
+        aumento = salario * (35/100);
+        novoSalario = salario + aumento
+        document.write("Voce recebera um aumento de : " + aumento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>");
+        document.write("Seu novo salario e de : " + novoSalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));   
+        document.write("<hr>")
+
+    }
+    else if(codigo == 3) {
+        document.write("Cargo : Caixa");
+        document.write("<hr>");
+
+        aumento = salario * (20/100);
+        novoSalario = salario + aumento
+        document.write("Voce recebera um aumento de : " + aumento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>");
+        document.write("Seu novo salario e de : " + novoSalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));   
+        document.write("<hr>")
+
+    }
+    else if(codigo == 4) {
+        document.write("Cargo : Gerente");
+        document.write("<hr>");
+
+        aumento = salario * (10/100);
+        novoSalario = salario + aumento
+        document.write("Voce recebera um aumento de : " + aumento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>");
+        document.write("Seu novo salario e de : " + novoSalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));   
+        document.write("<hr>")
+
+    }
+    else if(codigo == 5) {
+     document.write("Cargo: Direto");
+     document.write("<hr>");
+
+     document.write(" Voce não recebra aumento");
+     document.write("<hr>");
+     document.write("Seu salario continuara sendo de : " +salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));   
+     document.write("<hr>");
+    }
+    else{
+        alert("Voce digitou um codigo invalido");
+    }
+
+</script>
