@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+    const n1 = Number(prompt("Digite o primeiro numero : "));
+    const n2 = Number(prompt("Digite o segundo numero : "));
+    const operação = (prompt("Qual Operação Deseja: \n Soma: + \n Subtração: - \n Divisão: / \n Multiplicação: *"));
+
+    switch (operação) {
+        case "+":
+        resultado = n1+n2;
+        document.write("Resultado: " + resultado);
+        break;
+        case "-":
+        resultado = n1-n2;
+        document.write("Resultado: " + resultado);
+        break;
+        case "/":
+        resultado = n1/n2;
+        document.write("Resultado: " + resultado);
+        break;
+        case "*":
+        resultado = n1*n2;
+        document.write("Resultado: " + resultado);
+        break;
+        default:
+        document.write("Desculpe operação incorreta" + operação);
+
+    }
+
+</script>
