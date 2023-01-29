@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+    var anoNascimento = Number(prompt("Digite o ano em que nasceu"));
+    var anoAtual = Number(prompt("Digite o ano atual"));
+
+    var idade = anoAtual - anoNascimento;
+    var falta = 18 - idade;
+    var atraso = idade - 18;
+
+    if (idade < 18) {
+        document.write("Você tem : " + idade + " anos de idade e  falta "  + falta +  " anos para seu alistamento " + "<hr>");
+    }
+
+    else if (idade > 18) {
+        document.write("Você tem : " + idade + " anos de idade e esta atrasado "  + atraso +  " anos para seu alistamento " + "<hr>");
+
+    }
+
+</script>
