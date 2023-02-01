@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    var distancia = Number(prompt("Digite a quantidade de Km que deseja percorrer"));
+    
+    if(distancia <= 200){
+        var resultado1 = distancia*0.50;
+        document.write("Você viajou por : " + distancia + " Km");
+        document.write("<hr>");
+        document.write("O valor a ser pago na viagem é de : " + resultado1.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+    }
+    else if(distancia > 200){
+        var resultado2 = distancia*0.45;
+        document.write("Você viajou por : " + distancia + " Km");
+        document.write("<hr>");
+        document.write("O valor a ser pago na viagem é de : " + resultado2.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+    }
+</script>

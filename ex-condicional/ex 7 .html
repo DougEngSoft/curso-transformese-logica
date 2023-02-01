@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+    var nome = prompt("Digite seu nome");
+    var sexo = prompt("Digite seu sexo");
+    var compra = Number(prompt("Digite o valor da sua compra"));
+
+    var desconto;
+    var total;
+
+
+    if (sexo == "masculino") {
+
+        desconto = compra * (5 / 100);
+        total = compra - desconto
+
+        document.write("Sua compra foi no valor de : " + compra.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>");
+        document.write("O seu desconto foi de : " + desconto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>");
+        document.write("O valor total de sua compra foi de : " + total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>")
+
+    }
+    else if (sexo == "feminino") {
+
+        desconto = compra * (13 / 100);
+        total = compra - desconto
+        document.write("Sua compra foi no valor de : " + compra.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>");
+        document.write("O seu desconto foi de : " + desconto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>");
+        document.write("O valor total de sua compra foi de : " + total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+        document.write("<hr>")
+    }
+    else{
+        document.write("Codigo invalido");
+    }
+</script>
