@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+    var qtdPoCafe = Number(prompt("Digite a quantidade de colheres de cafe"));
+    var tipoCoador = prompt("Digite o tipo de coador");
+
+
+    fazerCafe (qtdPoCafe, tipoCoador);
+    
+    
+    function fazerCafe(qtdPoCafe, tipoCoador) {
+        document.write("Pegar o pó de café");
+        pulaLinha()
+        document.write("Colocar água pra esquentar");
+        pulaLinha();
+        document.write("Lavar a garrafa");
+        pulaLinha();
+        document.write("Posicionar o coador no funil");
+        pulaLinha();
+    
+        if(tipoCoador == "papel") {
+            document.write("Jogar um pouquinho de água quente no papel e jogar essa água fora");
+            pulaLinha();
+        }
+        
+        document.write("Colocar " + qtdPoCafe + " colheres de café na água");
+        pulaLinha();
+        document.write("Coar o café LENTAMENTE");
+        pulaLinha();
+        desenharUmaLinha();
+        
+    }
+    function arrumarCama (precisaTrocarLencol) {
+        if(precisaTrocarLencol){
+            document.write("Troca o lençol");
+            pulaLinha();
+        }
+            document.write("Dobra lençol");
+            pulaLinha();
+            document.write("Estica o lençol");
+            pulaLinha();
+            document.write("Arrumar o travesseiro");
+            pulaLinha();
+    }
+    
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+    
+    function desenharUmaLinha(){
+        document.write("<hr>");
+    }
+    
+    </script>

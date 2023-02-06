@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+    var quantasLinhas = Number(prompt("Digite quantas linas deseja pular"));
+    var nome = prompt("Digite seu nome");
+    var dataNascimento = prompt("Digite sua data de nascimento");
+    var salario = Number(prompt("Digite seu salario"));
+    var sexo = prompt("Digite seu sexo. F para feminino e M para masculino");
+
+    document.write("Nome : " + nome);
+    pulaLinha(quantasLinhas);
+    document.write("Nascimento : " + dataNascimento);
+    pulaLinha(quantasLinhas);
+    document.write("Salario : " + verficaSexoCalculaAumento(sexo, salario));
+    
+   
+
+    function pulaLinha(qtLinhas) {
+        for (let i = 0; i < qtLinhas; i++){
+            document.write("<br>");
+        }
+        
+    }
+
+    function verficaSexoCalculaAumento(sexoFuncionario, salarioFuncionario) {
+        if (sexoFuncionario == "F") {
+            salarioFuncionario = salarioFuncionario + (salarioFuncionario * (10 / 100));
+            return salarioFuncionario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        }
+        else {
+            salarioFuncionario = salarioFuncionario + (salarioFuncionario * (8 / 100));
+            return salarioFuncionario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        }
+    }
+</script>
