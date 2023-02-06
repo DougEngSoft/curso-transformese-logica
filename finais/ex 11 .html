@@ -1,0 +1,53 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+
+    var array = [];
+    var pares = [];
+    var impares = [];
+
+    for (let i = 0; i < 10; i++) {
+
+        array[i] = Number(prompt("Digite um numero inteiro"));
+
+        if((array[i] == 0)){
+          alert("Numero invalido");
+        }
+        if ((array[i] % 2) == 0) {
+
+
+            pares.push(array[i]);
+
+
+        }
+
+        else {
+
+
+            impares.push(array[i]);
+
+
+        }
+
+    }
+
+
+    for (let i = 0; i < pares.length; i++) {
+
+
+        document.write(pares[i] );
+    }
+
+    document.write("<br>");
+    document.write("Os numeros pares são: " + pares);
+    document.write("<br><br><br>");
+
+    for (let i = 0; i < impares.length; i++) {
+        document.write(impares[i] );
+    }
+
+    document.write("<br>");
+    document.write("Os numeros impares são : " + impares);
+
+</script>
