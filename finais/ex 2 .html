@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+
+<script>
+    var valor = Number(prompt("Digite o valor da sua compra"));
+    var desconto = valor * (9/100);
+    var valorFinal = valor - desconto;
+
+    document.write("O valor da sua compra foi de : " + valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+    document.write("O valor do seu desconto foi de : " + desconto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+    document.write("O valor total a ser pago é de : " + valorFinal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+</script>
+
+
