@@ -1,51 +1,36 @@
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-
+<meta charset="UTF-8">
 <script>
 
+   var numeros = [];
+   var pares = [];
+   var impares = [];
 
-    var array = [];
-    var pares = [];
-    var impares = [];
+   for (let i = 0; i < 10; i++) {
 
-    for (let i = 0; i < 10; i++) {
+      numeros[i] = Number(prompt("digíte um número"));
+      if (numeros[i] % 2 == 0)
 
-        array[i] = Number(prompt("Digite um numero inteiro"));
+         pares.push(numeros[i]);
 
+      else
 
-        if ((array[i] % 2) == 0) {
+         impares.push(numeros[i]);
 
+   }
+   document.write("números pares");
+   for (let i = 0; i < pares.length; i++) {
 
-            pares.push(array[i]);
+      document.write("<br>");
+      document.write(pares[i]);
+      document.write("<br>");
+      document.write("<hr>")
+   }
+   document.write("números ímpares");
+   for (let i = 0; i < impares.length; i++) {
 
-
-        }
-
-        else {
-
-
-            impares.push(array[i]);
-
-
-        }
-
-    }
-
-
-    for (let i = 0; i < pares.length; i++) {
-
-
-        document.write(pares[i] );
-    }
-
-    document.write("<br>");
-    document.write("Os numeros pares são: " + pares);
-    document.write("<br><br><br>");
-
-    for (let i = 0; i < impares.length; i++) {
-        document.write(impares[i] );
-    }
-
-    document.write("<br>");
-    document.write("Os numeros impares são : " + impares);
-
+      document.write("<br>");
+      document.write(impares[i]);
+      document.write("<br>");
+      document.write("<hr>")
+   }
 </script>
